@@ -1,0 +1,18 @@
+.main-content {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px); /* Ajusta según tu header/footer */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }

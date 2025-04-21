@@ -1,4 +1,59 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+import '../styles/page.module.css';
+
+
+export const metadata = {
+  title: 'CEPI Blog',
+  description: 'Blog du Centre d\'Expertise et de Perfectionnement en Informatique',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr">
+      <body>
+        <Header />
+        <main className="main-content">
+          <div className="container">
+            {children}
+          </div>
+        </main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
+
+/*import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import '../../styles/globals.css';
+import '../../styles/layout.css';
+
+export const metadata = {
+  title: 'CEPI Blog',
+  description: 'Blog du Centre d\'Expertise et de Perfectionnement en Informatique',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr">
+      <body className="bg-gray-50">
+        <Header />
+        <main className="container mx-auto py-4 px-4">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}*/
+
+
+
+
+
+
+
+/*import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,4 +79,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+}*/

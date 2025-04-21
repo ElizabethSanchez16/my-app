@@ -1,4 +1,7 @@
-function Footer() {
+import '../styles/globals.css';
+import '../styles/components.css';
+
+export default function Footer() {
     return (
       <footer className="footer">
         <div className="footer-content">

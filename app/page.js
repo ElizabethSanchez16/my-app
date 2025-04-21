@@ -1,4 +1,15 @@
-import Image from "next/image";
+import BlogList from '../components/BlogList';
+
+export default function Home() {
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-6">Articles récents</h1>
+      <BlogList />
+    </div>
+  );
+} 
+
+/*import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -92,4 +103,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+}*/
